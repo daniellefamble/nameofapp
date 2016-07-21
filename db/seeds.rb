@@ -5,4 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Product.create(:name => "seed-generated product", :description => "I also created this product without using the HTML form!")
+Product.create(:image_url => "gravity.jpg", :name => "BMW Bicycle", :description => "This new BMW bicycle for sale features a high total gear ratio transmission and aims to be the fastest pedal-powered bimmer ever.", :color=> "Yellow", :price => "$ 89")
+Product.create(:image_url => "hyper-shocker.jpg", :name => "Autumn Minon", :description => "Rare bicycle. It's a collector's dream!", :color => "Red/Grey", :price => "$ 129")
+Product.create(:image_url => "roadmaster.jpg", :name => "Vilano", :description => "Fixed Gear Bicycle", :color => "Grey", :price => "$ 269")
