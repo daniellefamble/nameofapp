@@ -19,12 +19,16 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button><!-- END BUTTON -->
-				<a class="navbar-brand" href="#">Bike Berlin</a>
+				<%= link_to("Bike Berlin", root_path, "class" => 'navbar-brand') %>
 			</div><!-- END NAVBAR-HEADER -->
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
+					<li>
+						<%= link_to("About", static_pages_about_path) %>
+					</li>
+					<li>
+						<%= link_to("Contact", static_pages_contact_path) %>
+					</li>
 				</ul><!-- END UL NAV -->
 			</div><!-- END NAVBAR-COLLAPSE -->
 		</div><!-- END CONTAINER-FLUID -->
