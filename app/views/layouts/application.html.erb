@@ -21,16 +21,24 @@
 				</button><!-- END BUTTON -->
 				<%= link_to("Bike Berlin", root_path, "class" => 'navbar-brand') %>
 			</div><!-- END NAVBAR-HEADER -->
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<%= link_to("About", static_pages_about_path) %>
-					</li>
-					<li>
-						<%= link_to("Contact", static_pages_contact_path) %>
-					</li>
-				</ul><!-- END UL NAV -->
-			</div><!-- END NAVBAR-COLLAPSE -->
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<%= form_tag("/products", method: "get", class: "navbar-form") do %>
+								<%= label_tag(:q, "Search for:") %>
+								<%= text_field_tag(:q) %>
+								<%= submit_tag("Search", class: "btn btn-default") %>
+							<% end %>
+						</li>
+						<li>
+							<%= link_to("About", static_pages_about_path) %>
+						</li>
+						<li>
+							<%= link_to("Contact", static_pages_contact_path) %>
+						</li>
+					</ul><!-- END UL NAV -->	
+				</div><!-- END NAVBAR-COLLAPSE -->
+				
 		</div><!-- END CONTAINER-FLUID -->
 	</nav><!-- END NAV -->
 
