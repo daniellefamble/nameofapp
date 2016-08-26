@@ -2,10 +2,10 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-6">
-      <%= img_tag(@product.img_url, class: "img-responsive") %>
+    <div class="col-xs-12 col-md-8">
+      <%= image_tag(@product.image_url, class: "img-responsive", id: "product-img") %>
     </div>
-    <div class="col-sm-6">
+    <div class="col-xs-6 col-md-4">
       <h2><%= @product.name %></h2>
       <h4><%= @product.price %></h4>
       <p>
@@ -21,21 +21,14 @@
 </div>
 
 <div class="container-fluid">
-  <div class="row">
+  <div class="row col-xs-12">
     <p>
       <strong>Customer Reviews:</strong><hr>
-      <strong>Top Positive Review:</strong><%= @product.higest_rating_comment %>
-      <strong>Top Critical Review</strong><%= @product.lowest_rating_comment %>
+      <strong>Top Positive Review:</strong><%= @product.higest_rating_comment %><br>
+      <strong>Top Critical Review:</strong><%= @product.lowest_rating_comment %>
     </p>
   </div>
 </div>
-
-
-
-<p>
-  <strong>Comments:</strong>
-  <%= @product.highest_rating_comment %>
-</p>
 
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
