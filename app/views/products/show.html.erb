@@ -16,6 +16,7 @@
         <strong>Description:</strong>
         <%= @product.description %>
       </p>
+      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></p>
     </div>
   </div>
 </div>
@@ -27,6 +28,12 @@
       <strong>Top Positive Review:</strong><%= @product.higest_rating_comment %><br>
       <strong>Top Critical Review:</strong><%= @product.lowest_rating_comment %>
     </p>
+    <div>
+      <%= render partial:'new_comment' %>
+    </div>
+    <div>
+      <%= render partial:'comments' %>
+    </div>
   </div>
 </div>
 
