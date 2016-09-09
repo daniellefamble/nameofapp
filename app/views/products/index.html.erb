@@ -1,16 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="page-header">Listing Products</h1>
+<h1 class="page-header">Our Bikes</h1>
 
 <div class="container-fluid">
   <div class="row">
     <% @products.each do |product| %>
-      <%= render @products %>
+      <%= render product %>
     <% end %>
   </div><!-- END ROW -->
 </div><!-- END CONTAINER-FLUID -->
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<%= link_to 'Add New Product', new_product_path, class: "btn btn-default" %>
   

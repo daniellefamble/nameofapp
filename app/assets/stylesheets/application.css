@@ -23,6 +23,23 @@ body {
 	padding-bottom: 60px;
 }
 
+/* NAVBAR */
+.navbar-brand {
+	font-size: 2em;
+}
+
+a.btn.btn-info.login {
+	margin-top: 10px;
+	margin-right: 10px;
+	padding: 5px;
+	font-size: 1.25em;
+}
+.nav-text {
+	font-size: 1.25em;
+}
+
+/* FOOTER */
+
 .footer {
 	position: absolute;
 	bottom: 0;
@@ -60,4 +77,5 @@ p.footer-content {
 	margin-bottom: 15px;
 	padding: 7px 9px;
 }
+
 
